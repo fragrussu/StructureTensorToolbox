@@ -22,7 +22,7 @@ addpath(genpath(toolboxdir));
 sigma_DoG = 0.27;  % Standard deviation of derivative-of-gaussian (DoG) kernels [pixel]
 sigma_gauss = 3;   % Standard deviation of Gaussian kernel [pixel]
 patch_width = 152;   % Patch width: we divide the image in three patches
-patch_height = 158;  % Patch width: we divide the image in three patches
+patch_height = 158;  % Patch height: we divide the image in three patches
 nbins_or = 128;     % Number of bins for orientation histogram
 nbins_ai = 128;     % Number of bins for anisotropy histogram
 
@@ -72,6 +72,7 @@ imshow(ColourWheel); title('Colour-orientation map');
 fprintf('\n****************************************************\n')
 fprintf('Directional statistics of image\n')
 fprintf('****************************************************\n\n')
+
 for pp=1:3
 fprintf('\nPatch %d (from left to right)\n',pp)
 fprintf('      Watson model:\n')
