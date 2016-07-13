@@ -2,7 +2,7 @@
 
 StructureTensorToolbox is released under the BSD Two-Clause License. 
 Each contributor holds copyright over his/her own contributions to the software. The project versioning records all contributions and copyright details. 
-By contributing to the software, the contributor releases his/her content  to the license and copyright terms stated below.
+By contributing to the software, the contributor releases his/her content according to the license and copyright terms stated below.
 
 
 # License
