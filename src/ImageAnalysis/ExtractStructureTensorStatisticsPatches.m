@@ -92,7 +92,7 @@ end
 
 
 
-%%% DOUBLE ANGLES AND REPHASE TO USE MONO-MODAL DISTRIBUTIONS PROPERLY
+%%% REPHASE TO USE MONO-MODAL DISTRIBUTIONS PROPERLY
 % Find offset accounting for wraps
 angles_complex = exp(1i*2*orientationNoBorders);   % Complex vector after doubling 
 angles_complex_mean = mean(angles_complex);
