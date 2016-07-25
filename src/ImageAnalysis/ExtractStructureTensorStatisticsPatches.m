@@ -93,10 +93,34 @@ end
 
 
 %%% DOUBLE ANGLES AND REPHASE TO USE MONO-MODAL DISTRIBUTIONS PROPERLY
-angles_rephased = 2*orientationNoBorders;
-angles_rephased(angles_rephased>pi) = angles_rephased(angles_rephased>pi) - 2*pi;   % Rephase angles so that angles bigger than pi are remapped in the range [0; pi]
-angles_rephased = angles_rephased/2;
+% Find offset accounting for wraps
+angles_complex = exp(1i*2*orientationNoBorders);   % Complex vector after doubling 
+angles_complex_mean = mean(angles_complex);
+myoffset = angle(angles_complex_mean)/2;
+if(myoffset < 0)
+    myoffset  = myoffset + pi;
+end
+% Find angle between each orientation and the offset
+dot_prod_or = cos(myoffset)*cos(orientationNoBorders) + sin(myoffset)*sin(orientationNoBorders);  % Dot product between vector corresponding to offset and vectors corresponding to orientations
+dot_prod_or_abs = abs(dot_prod_or);   % Absolute value of dot product
+dot_prod_distance_radians = acos(dot_prod_or_abs);     % Absolute distance from the offset in radians
+if(isreal(dot_prod_distance_radians)==0)   % If we get a complex angle, there are orientations that have to be considered numerically equal to the offset itself 
+
+    for qq=1:length(dot_prod_distance_radians)
+       
+         if( isreal(dot_prod_distance_radians(qq))==0 )
+              dot_prod_distance_radians(qq) = 0;
+         end
+        
+    end
+    
+end
+dot_prod_or_sign = sign(dot_prod_or);    % Sign of the distance
+% Rephase angles for proper use of Gaussian, Von Mises models and their weighted counterparts
+angles_rephased = myoffset + dot_prod_or_sign.*dot_prod_distance_radians;
+% Get complex data
 angles_rephased_vec = exp(1i*angles_rephased);
+% Get number of observations in this patch sample
 Nsample = length(angles_rephased);
 
 
