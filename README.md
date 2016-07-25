@@ -9,3 +9,8 @@ StructureTensorToolbox is released under the BSD Two-Clause License (see LICENSE
 
 Each contributor holds copyright over his/her own contributions to the software. The project versioning records all contributions and copyright details. 
 By contributing to the software, the contributor releases his/her content according to the license and copyright terms of StructureTensorToolbox.
+
+# Acknowledgement
+If you use StructureTensorToolbox for your research, please cite:
+
+Grussu F,  Schneider T,  Yates RL,  Tachrount M,  Zhang H,  Alexander DC, DeLuca GC and Wheeler-Kingshott CAM, "Quantitative histological correlates of NODDI orientation dispersion estimates in the human spinal cord", Proceedings of the International Society for Magnetic Resonance in Medicine (ISMRM) 2015, p.0154.
