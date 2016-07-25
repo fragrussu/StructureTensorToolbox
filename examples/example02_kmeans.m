@@ -28,7 +28,7 @@ binaryimage = PerformPatchwiseKMeans_NClusters(I,mymask,PW,PH,nclusters,'cityblo
 
 %% Extract patch-by-patch segmented fraction
 myPatchWidth = 60;  % Patch width in number of pixels
-myPatchHeight = 30; % Patch height in number of pixels 
+myPatchHeight = 60; % Patch height in number of pixels 
 [FracNativeRes, FracPathRes] = ExtractPatchwiseSegmentedFraction(binaryimage,ones(size(binaryimage)),myPatchWidth,myPatchHeight);  % Get segmented pixel fraction within the patches
 
 %% Plot segmentation
@@ -40,6 +40,7 @@ subplot(3,1,2)
 imshow(cat(3,binaryimage,binaryimage,binaryimage));
 title('Segmented image: find the darkest rectangle')
 subplot(3,1,3)
-imagesc(FracNativeRes,[0 1]); axis image; colorbar;
-title('Patch-wise segmented pixel fraction map')
+imagesc(FracPathRes,[0 1]); axis image; colorbar;
+title('Segmented pixel fraction map (patch-wise resolution)')
 set(gca,'XTick',[],'YTick',[]);
+
