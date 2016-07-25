@@ -29,7 +29,7 @@ nbins_ai = 128;     % Number of bins for anisotropy histogram
 % Load data
 I = imread('lines.png');
 img = PreprocessInputImage(I);
-ColourWheel = imread('HueCircleFull_alpha.png');
+ColourWheel = imread('HueCircleFull_alpha_Theta0Red_ThetaPiRed.png');
 
 % Load maks: evaluate statistics using only pixels belonging to the lines
 mymask = logical(imread('lines_binarymask.png'));
