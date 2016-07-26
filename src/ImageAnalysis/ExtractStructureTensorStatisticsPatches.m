@@ -117,6 +117,7 @@ for qq=1:length(dot_prod_or)
      
         
 end
+angles_rephased(angles_rephased>pi) = angles_rephased(angles_rephased>pi) - 2*pi;
 % Get complex data
 angles_rephased_vec = exp(1i*angles_rephased);
 % Get number of observations in this patch sample
