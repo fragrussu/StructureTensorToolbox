@@ -80,7 +80,7 @@ fprintf('          Mean = %f deg; CV = %f\n',STmaps_paxel_Watson.CircularMean(pp
 fprintf('      weighted-Watson model:\n')
 fprintf('          Mean = %f deg; CV = %f\n',STmaps_paxel_WeighWatson.CircularMean(pp)*180/pi,STmaps_paxel_WeighWatson.CircularVariance(pp))
 fprintf('      Von Mises model:\n')
-fprintf('          Mean = %f deg; CV = %f\n',STmaps_paxel_VonMises.CircularMean(pp)*180/pi,STmaps_paxel_Watson.CircularVariance(pp))
+fprintf('          Mean = %f deg; CV = %f\n',STmaps_paxel_VonMises.CircularMean(pp)*180/pi,STmaps_paxel_VonMises.CircularVariance(pp))
 fprintf('      weighted-Von Mises model:\n')
 fprintf('          Mean = %f deg; CV = %f\n',STmaps_paxel_WeighVonMises.CircularMean(pp)*180/pi,STmaps_paxel_WeighVonMises.CircularVariance(pp))
 fprintf('      Gaussian model:\n')
