@@ -91,7 +91,6 @@ if(isempty(orientationNoBorders))
 end
 
 
-
 %%% REPHASE TO USE MONO-MODAL DISTRIBUTIONS PROPERLY
 % Find offset accounting for wraps
 angles_complex = exp(1i*2*orientationNoBorders);   % Complex vector after doubling 
@@ -100,24 +99,24 @@ myoffset = angle(angles_complex_mean)/2;
 if(myoffset < 0)
     myoffset  = myoffset + pi;
 end
-% Find angle between each orientation and the offset
+% Find angle between each orientation and the offset using dot product and rephase
 dot_prod_or = cos(myoffset)*cos(orientationNoBorders) + sin(myoffset)*sin(orientationNoBorders);  % Dot product between vector corresponding to offset and vectors corresponding to orientations
-dot_prod_or_abs = abs(dot_prod_or);   % Absolute value of dot product
-dot_prod_distance_radians = acos(dot_prod_or_abs);     % Absolute distance from the offset in radians
-if(isreal(dot_prod_distance_radians)==0)   % If we get a complex angle, there are orientations that have to be considered numerically equal to the offset itself 
-
-    for qq=1:length(dot_prod_distance_radians)
+dot_prod_or_plus_pi = cos(myoffset + pi)*cos(orientationNoBorders) + sin(myoffset + pi)*sin(orientationNoBorders);  % Dot product between vector corresponding to offset+pi and vectors corresponding to orientations
+angles_rephased = zeros(size(orientationNoBorders));
+for qq=1:length(dot_prod_or)
        
-         if( isreal(dot_prod_distance_radians(qq))==0 )
-              dot_prod_distance_radians(qq) = 0;
-         end
+     [~,idx] = max([dot_prod_or(qq) dot_prod_or_plus_pi(qq)]);
+     
+     switch idx
+         
+         case 1
+              angles_rephased(qq) = orientationNoBorders(qq);
+         case 2
+             angles_rephased(qq) = orientationNoBorders(qq)+pi;
+     end
+     
         
-    end
-    
 end
-dot_prod_or_sign = sign(dot_prod_or);    % Sign of the distance
-% Rephase angles for proper use of Gaussian, Von Mises models and their weighted counterparts
-angles_rephased = myoffset + dot_prod_or_sign.*dot_prod_distance_radians;
 % Get complex data
 angles_rephased_vec = exp(1i*angles_rephased);
 % Get number of observations in this patch sample
