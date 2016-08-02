@@ -13,4 +13,4 @@ By contributing to the software, the contributor releases his/her content accord
 # Acknowledgement
 If you use StructureTensorToolbox for your research, please cite:
 
-"Quantitative histological correlates of NODDI orientation dispersion estimates in the human spinal cord". Grussu F,  Schneider T,  Yates RL,  Tachrount M,  Zhang H,  Alexander DC, DeLuca GC and Wheeler-Kingshott CAM. Proceedings of the International Society for Magnetic Resonance in Medicine (ISMRM) 2015, p.0154.
+"A framework for optimal whole-sample histological quantification of neurite orientation dispersion in the human spinal cord". Grussu F,  Schneider T,  Yates RL,  Zhang H,  Gandini Wheeler-Kingshott CAM, DeLuca GC* and Alexander DC* (* joint sneior authors). Journal of Neuroscience Methods, 2016 (accepted, ahead of print).
