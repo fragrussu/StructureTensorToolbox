@@ -13,4 +13,4 @@ By contributing to the software, the contributor releases his/her content accord
 # Acknowledgement
 If you use StructureTensorToolbox for your research, please cite:
 
-"A framework for optimal whole-sample histological quantification of neurite orientation dispersion in the human spinal cord". Grussu F,  Schneider T,  Yates RL,  Zhang H,  Gandini Wheeler-Kingshott CAM, DeLuca GC* and Alexander DC* (* joint senior authors). Journal of Neuroscience Methods, 2016 (accepted, ahead of print). DOI: 10.1016/j.jneumeth.2016.08.002.
+"A framework for optimal whole-sample histological quantification of neurite orientation dispersion in the human spinal cord". Grussu F,  Schneider T,  Yates RL,  Zhang H,  Gandini Wheeler-Kingshott CAM, DeLuca GC* and Alexander DC* (* joint senior authors). Journal of Neuroscience Methods (2016): vol. 273, pages 20–32. DOI: 10.1016/j.jneumeth.2016.08.002.
