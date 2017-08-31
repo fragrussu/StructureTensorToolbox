@@ -13,4 +13,6 @@ By contributing to the software, the contributor releases his/her content accord
 # Acknowledgement
 If you use StructureTensorToolbox for your research, please cite:
 
-"A framework for optimal whole-sample histological quantification of neurite orientation dispersion in the human spinal cord". Grussu F,  Schneider T,  Yates RL,  Zhang H,  Gandini Wheeler-Kingshott CAM, DeLuca GC* and Alexander DC* (* joint senior authors). Journal of Neuroscience Methods (2016): vol. 273, pages 20–32. DOI: 10.1016/j.jneumeth.2016.08.002.
+"Neurite dispersion: a new marker of multiple sclerosis spinal cord pathology?". Grussu F, Schneider T, Tur C, Yates RL, Tachrount M, Ianus A, Yiannakas MC, Newcombe J, Zhang H, Alexander DC, DeLuca GC and Gandini Wheeler-Kingshott CAM. Annals of Clinical and Translational Neurology (2017; early view ahead of print).
+
+"A framework for optimal whole-sample histological quantification of neurite orientation dispersion in the human spinal cord". Grussu F,  Schneider T,  Yates RL,  Zhang H,  Gandini Wheeler-Kingshott CAM, DeLuca GC and Alexander DC. Journal of Neuroscience Methods (2016): vol. 273, pages 20–32. DOI: 10.1016/j.jneumeth.2016.08.002.
