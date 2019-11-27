@@ -1,7 +1,7 @@
 %% Example 01: calculate pixel-wise structure tensor and tensor statistics
 %
 % This script shows how to calculate the structure tensor of an image
-% and how to extract path-by-path directional statistics.
+% and how to extract patch-by-patch directional statistics.
 % The script divides the image in three patches, horizontally, from left to
 % right, and prints information about the orientation distrobution in each
 % patch.
