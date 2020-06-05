@@ -4,6 +4,10 @@ Structure tensor (ST) analysis toolbox for MATLAB.
 The toolbox provides a collection of routines for the evaluation of orientation dispersion (OD) metrics via patch-wise statistical analysis of the ST-derived image orientation.
 It is designed for the quantification of OD from histological images of neural tissue, as for example silver-stained sagittal or coronal sections of spinal cord specimens. 
 
+Tutorials are available within the [*examples*](https://github.com/fragrussu/StructureTensorToolbox/tree/master/examples) folder:
+* [*example01_STanalysis.m*](https://github.com/fragrussu/StructureTensorToolbox/blob/master/examples/example01_STanalysis.m) shows how to perform ST analysis and how to extract directional statistics within image pages;
+* [*example02_kmeans.m*](https://github.com/fragrussu/StructureTensorToolbox/blob/master/examples/example02_kmeans.m) shows how to perform basic segmentation of stained histological material based on k-means clustering in RGB colour space.
+
 # License information 
 StructureTensorToolbox is released under the BSD Two-Clause License (see LICENSE.md of LICENSE.pdf).
 
