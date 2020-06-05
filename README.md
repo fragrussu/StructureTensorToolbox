@@ -4,7 +4,7 @@
 The toolbox provides a collection of routines for the evaluation of directional statistics and staining fraction metrics via patch-wise analysis of histological images. The toolbox is specifically designed for the quantification of *orientation dispersion* in histological images of neural tissue, as for example silver-stained 2D sagittal sections of spinal cord specimens as done in [this paper of ours](http://doi.org/10.1002/acn3.445). 
 
 Tutorials are available within the [*examples*](https://github.com/fragrussu/StructureTensorToolbox/tree/master/examples) folder:
-* [*example01_STanalysis.m*](https://github.com/fragrussu/StructureTensorToolbox/blob/master/examples/example01_STanalysis.m) shows how to perform ST analysis and how to extract directional statistics within image pages;
+* [*example01_STanalysis.m*](https://github.com/fragrussu/StructureTensorToolbox/blob/master/examples/example01_STanalysis.m) shows how to perform ST analysis and how to extract directional statistics within image patches;
 * [*example02_kmeans.m*](https://github.com/fragrussu/StructureTensorToolbox/blob/master/examples/example02_kmeans.m) shows how to perform basic segmentation of stained histological material based on k-means clustering in RGB colour space.
 
 # License information 
