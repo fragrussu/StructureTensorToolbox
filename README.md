@@ -8,7 +8,7 @@ Tutorials are available within the [*examples*](https://github.com/fragrussu/Str
 * [*example02_kmeans.m*](https://github.com/fragrussu/StructureTensorToolbox/blob/master/examples/example02_kmeans.m) shows how to perform basic segmentation of stained histological material based on k-means clustering in RGB colour space.
 
 # License information 
-StructureTensorToolbox is released under the BSD Two-Clause License (see LICENSE.md of LICENSE.pdf).
+StructureTensorToolbox is released under the BSD Two-Clause License (see [LICENSE.md](https://github.com/fragrussu/StructureTensorToolbox/blob/master/LICENSE.md) of [LICENSE.pdf](https://github.com/fragrussu/StructureTensorToolbox/blob/master/LICENSE.pdf)).
 
 Each contributor holds copyright over his/her own contributions to the software. The project versioning records all contributions and copyright details. 
 By contributing to the software, the contributor releases his/her content according to the license and copyright terms of StructureTensorToolbox.
