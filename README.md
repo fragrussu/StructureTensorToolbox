@@ -1,5 +1,5 @@
 # StructureTensorToolbox
-Structure tensor (ST) analysis toolbox for MATLAB.
+2D Structure tensor (ST) analysis toolbox for MATLAB.
 
 The toolbox provides a collection of routines for the evaluation of directional statistics and staining fraction metrics via patch-wise analysis of histological images. The toolbox is specifically designed for the quantification of *orientation dispersion* in histological images of neural tissue, as for example silver-stained 2D sagittal sections of spinal cord specimens as done in [this paper of ours](http://doi.org/10.1002/acn3.445). 
 
